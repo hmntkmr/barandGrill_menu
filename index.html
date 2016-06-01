@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" media="screen" href="vender/reset.css">
@@ -20,10 +21,7 @@
 
 
     body {
-      background-color: #3a3a3a;
-      padding-top: 100px;
-      color: white;
-      font-size: 0px;
+     
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
@@ -32,16 +30,10 @@
     h2 {
       display: block;
       width: 100%;
-      font-weight: 300;
       font-size: 20px;
-      margin-bottom: 50px;
       text-align: center;
     }
 
-    img{
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
     
     .tabs {
       display: inline-block;
@@ -105,279 +97,622 @@
 
 </head>
 
-<body>
-    <div class="tabs">
-        <h2>Menu</h2>
+<body class="container col-md-12 ">
 
 
-        <div class="tab tab-1">
-            <div>
-                <p class="turnBoxButton turnBoxNext">Breakfast</p>
-            </div>
 
-
-            <div>
-                <p>Breakfast</p>
-            </div>
+<div class="tabs">
+    <h2>
+        <img src="img/logo.jpg">
+    </h2>
+    <div class="tab tab-1">
+        <div>
+            <p class="turnBoxButton turnBoxNext">
+                Breakfast
+            </p>
         </div>
-
-
-        <div class="tab tab-2">
-            <div>
-                <p class="turnBoxButton turnBoxNext">Lunch</p>
-            </div>
-
-
-            <div>
-                <p>Lunch</p>
-            </div>
-        </div>
-
-
-        <div class="tab tab-3">
-            <div>
-                <p class="turnBoxButton turnBoxNext">Dinner</p>
-            </div>
-
-
-            <div>
-                <p>Dinner</p>
-            </div>
+        <div>
+            <p>
+                Breakfast
+            </p>
         </div>
     </div>
-
-
-    <div class="content-box background">
+    <div class="tab tab-2">
         <div>
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th class="text-left">Food</th>
+            <p class="turnBoxButton turnBoxNext">
+                Lunch
+            </p>
+        </div>
+        <div>
+            <p>
+                Lunch
+            </p>
+        </div>
+    </div>
+    <div class="tab tab-3">
+        <div>
+            <p class="turnBoxButton turnBoxNext">
+                Dinner
+            </p>
+        </div>
+        <div>
+            <p>
+                Dinner
+            </p>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+    <!-- tab 1 starts -->
+    <div>
+        <!-- headder starts -->
+        <div class="row">
+            <div class="col-md-12 col-xs-12 center-block">
+                <img class="img-responsive center-block img-thumbnail" src="img/breakfast.jpg">
+            </div>
+        </div>
+        <!-- row starts  -->
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+            	 <div class="table-responsive eggs">
+                    <table class="table">
+                        <tr>
+                            <td class="text-left">
+                                One Egg
+                            </td>
+                            <td class="text-right">
+                                $3.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                Two Eggs
+                            </td>
+                            <td class="text-right">
+                                $5.49
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                Sonny's House Special
+                            </td>
+                            <td class="text-right">
+                                $6.69
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                Three Eggs
+                            </td>
+                            <td class="text-right">
+                                $7.59
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                Hearty Man's
+                            </td>
+                            <td class="text-right">
+                                $8.49
+                            </td>
+                        </tr>
+                    </table>
+                </div><!-- should have image of eggs in the background -->
+                <h4 class="text-center">
+                    Three Eggs Omelettes
+                </h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th class="text-left">
+                                Plain
+                            </th>
+                            <td class="text-right">
+                                $6.49
+                            </td>
+                            <th class="text-left">
+                                Cheese
+                            </th>
+                            <td class="text-right">
+                                $7.69
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Western
+                            </th>
+                            <td class="text-right">
+                                $7.99
+                            </td>
+                            <th class="text-left">
+                                Vegetarian
+                            </th>
+                            <td class="text-right">
+                                $8.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Mushroom
+                            </th>
+                            <td class="text-right">
+                                $7.59
+                            </td>
+                            <th class="text-left">
+                                Greek
+                            </th>
+                            <td class="text-right">
+                                $9.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left" colspan="2">
+                                Add Cheese
+                            </th>
+                            <td class="text-right" colspan="2">
+                                $1.29
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
-                                <th class="text-right">Price</th>
-                            </tr>
+            <div class="col-md-6 col-xs-12">
+            	<img class="img-responsive img-thumbnail pull-left " src="img/omlets.jpg">
+            </div>
+        </div>
 
+        <div class="row">
+        	<div class="col-md-6 col-xs-12">
+        		<img class="img-responsive img-thumbnail pull-right" src="img/sandwiches.jpg">
+        	</div>
+        	<div class="col-md-6 col-xs-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th class="text-left">
+                                Egg Sandwich
+                            </th>
+                            <td class="text-right">
+                                $2.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Grill Cheese Sandich
+                            </th>
+                            <td class="text-right">
+                                $3.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                B.L.T
+                            </th>
+                            <td class="text-right">
+                                $3.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Western
+                            </th>
+                            <td class="text-right">
+                                $4.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Ham and Cheese
+                            </th>
+                            <td class="text-right">
+                                $4.99
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="well">
+                	<h1>Breakfast Menu</h1>
+                	<h2>Monday to Sunday</h2>
+                	<h3>7am to 4am</h3>
+                </div>
+            </div>    
+            <!-- column ends -->
+        </div>  
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <img class="img-responsive img-thumbnail center-block" src="img/homemadebread.jpg">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th class="text-left">
+                                Continental Breakfast
+                            </th>
+                            <td class="text-right">
+                                $8.49
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="2">
+                                Fresh fruit cocktail, cottage cheese, bagel and coffee.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Ham Steak and Eggs
+                            </th>
+                            <td class="text-right">
+                                $11.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-right">
+                                A thick juicy ham steak, two eggs, served with home fries, toast and coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Steak and Eggs
+                            </th>
+                            <td class="text-right">
+                                $13.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-right">
+                                8 oz New York steak and two eggs, served with home fries, toast and coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Eggs Benedict
+                            </th>
+                            <td class="text-right">
+                                $9.49
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-right">
+                                Two eggs on an english muffin with ham and hollandise sauce served with home fries and coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">
+                                Asparagus and Swiss Benedict
+                            </th>
+                            <td class="text-right">
+                                $10.99
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-                            <tr>
-                                <td class="text-left">One Egg</td>
+        <div class="row">
+        	<div class="col-md-8 col-xs-12">
+        		<div class="row">
+        			<div class="col-md-6 col-xs-6">
+        				<h4 class="text-left">Pancakes and Things</h4>
+        				<div class="table-responsive">
+	                    	<table class="table">
+		                        <tr>
+		                            <th class="text-left">
+		                            	Two Pancakes
+		                            </th>
+		                            <td class="text-right">
+		                                $7.99
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	French toast with Syrup
+		                            </th>
+		                            <td class="text-right">
+		                                $5.99
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Two Pancakes with Syrup
+		                            </th>
+		                            <td class="text-right">
+		                                $6.49
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Three Pancakes with Syrup
+		                            </th>
+		                            <td class="text-right">
+		                                $7.49
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <td colspan="2" class="text-right">
+		                            	One egg, bacon ham or sausage, served with home fries and coffee<br>
+		                            	Add blueberries or chocolate chips for $1.49
+		                            </td>
+		                        </tr>
+	                        </table>
+                        </div>
+                        <img  class="img-responsive img-thumbnail" src="img/pancakes.jpg">
 
-                                <td class="text-right">$3.99</td>
-                            </tr>
+        			</div>
+        			<div class="col-md-6 col-xs-6">
+        				<h4 class="text-right">Bagels</h4>
+    					<div class="table-responsive">
+	                    	<table class="table">
+		                        <tr>
+		                            <th class="text-left">
+		                            	Plain Bagel <td>$1.99</td>
+		                            </th>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Bagel and Cream Cheese <td>$2.49</td>
+		                            </th>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Bagel, B.L.T <td>$4.99</td>
+		                            </th>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Bagel, Egg, Cheese <td>$5.99</td>
+		                            </th>
+		                        </tr>
+		                        <tr>
+		                            <th class="text-left">
+		                            	Bagel Egg, Cheese and Bacon <td>$5.99</td>
+		                            </th>
+		                        </tr>
+	                        </table>
+                        </div>
 
-
-                            <tr>
-                                <td class="text-left">Two Eggs</td>
-
-                                <td class="text-right">$5.49</td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="text-left">Sonny's House Special</td>
-
-                                <td class="text-right">$6.69</td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="text-left">Three Eggs</td>
-
-                                <td class="text-right">$7.59</td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="text-left">Hearty Man's</td>
-
-                                <td class="text-right">$8.49</td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                    <img class="img-responsive img-rounded center-block" src="img/eggs.jpg">
-
-                    <h4 class="text-center">Three Eggs Omelettes</h4>
-
-
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th class="text-left">Plain</th>
-
-                                <td class="text-right">$6.49</td>
-
-                                <th class="text-left">Cheese</th>
-
-                                <td class="text-right">$7.69</td>
-                            </tr>
-
-
-                            <tr>
-                                <th class="text-left">Western</th>
-
-                                <td class="text-right">$7.99</td>
-
-                                <th class="text-left">Vegetarian</th>
-
-                                <td class="text-right">$8.99</td>
-                            </tr>
-
-
-                            <tr>
-                                <th class="text-left">Mushroom</th>
-
-                                <td class="text-right">$7.59</td>
-
-                                <th class="text-left">Greek</th>
-
-                                <td class="text-right">$9.99</td>
-                            </tr>
-
-
-                            <tr >
-                                <th colspan="2" class="text-left">Add Cheese</th>
-
-                                <td colspan="2" class="text-right">$1.29</td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                    <img class="img-responsive img-rounded center-block" src="img/sandwiches.jpg">
-                    <h4>Sandwiches</h4>
-
-                     <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th class="text-left">Egg Sandwich</th>
-
-                                <td class="text-right">$2.99</td>                                
-                            </tr>
-
-                            <tr>
-                              <th class="text-left">Grill Cheese Sandich</th>
-
-                              <td class="text-right">$3.99</td>
-                          </tr>
-
-                          <tr>
-                              <th class="text-left">B.L.T</th>
-
-                              <td class="text-right">$3.99</td>
-                          </tr>
-
-                          <tr>
-                              <th class="text-left">Western</th>
-
-                              <td class="text-right">$4.99</td>
-                          </tr>
-                          <tr>
-                              <th class="text-left">Ham and Cheese</th>
-
-                              <td class="text-right">$4.99</td>
-                          </tr>
-
-                        </table>
-                      </div>
-
-                      <img class="img-responsive img-rounded center-block" src="img/homemadebread.jpg">
-
-                      <h4 class="text-center">Homemade Bread</h4>
                         <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th class="text-left">Continental Breakfast</th>
-
-                                <td class="text-right">$8.49</td>                                
+	        				<h4>Kids Stuff</h4>
+	                    <table class="table">
+	                        <tr>
+	                            <th class="text-left">
+	                                Egg in a Hole
+	                            </th>
+	                            <td class="text-right">
+	                                $1.69<br>With bacon, ham or sausage, home fries
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Mini Omelettes
+	                            </th>
+	                            <td class="text-right">
+	                                $3.59
+	                            </td>
                             </tr>
                             <tr>
-                              <td colspan="2">Fresh fruit cocktail, cottage cheese, bagel and coffee.</td>
-                            </tr>
-                            <tr>
-                                <th class="text-left">Ham Steak and Eggs</th>
-
-                                <td class="text-right">$11.99</td>                                
-                            </tr>
-                            <tr>
-                              <td colspan="2">A thick juicy ham steak, two eggs, served with home fries, toast and coffee</td>
-                            </tr>
-                            <tr>
-                                <th class="text-left">Steak and Eggs</th>
-
-                                <td class="text-right">$13.99</td>                                
-                            </tr>
-                            <tr>
-                              <td colspan="2">8 oz New York steak and two eggs, served with home fries, toast and coffee</td>
-                            </tr>
-                            <tr>
-                                <th class="text-left">Eggs Benedict</th>
-
-                                <td class="text-right">$9.49</td>                                
-                            </tr>
-                            <tr>
-                              <td colspan="2">Two eggs on an english muffin with ham and hollandise sauce served with home fries and coffee</td>
-                            </tr>
-                            <tr>
-                                <th class="text-left">Asparagus and Swiss Benedict</th>
-
-                                <td class="text-right">$10.99</td>                                
-                            </tr>
+	                            <td class="text-left">
+	                                Cheese
+	                            </td>
+	                            <td class="text-right">
+	                                $3.59
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="text-left">
+	                                Western
+	                            </td>
+	                            <td class="text-right">
+	                                $3.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="text-left">
+	                                With home fries and one toast
+	                            </td>
+	                            <td class="text-right">
+	                                $4.29
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                French Toast
+	                            </th>
+	                            <td class="text-right">
+	                                From $2.49
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Pancakes
+	                            </th>
+	                            <td class="text-right">
+	                                From $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Two Pancakes
+	                            </th>
+	                            <td class="text-right">
+	                                $2.99
+	                            </td>
+	                        </tr>
+	                         <tr>
+	                            <th class="text-left">
+	                                Kid Benedict
+	                            </th>
+	                            <td class="text-right">
+	                                $5.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Kid Side Orders
+	                            </th>
+	                            <td class="text-right">
+	                                From $1.29
+	                            </td>
+	                        </tr>
                         </table>
-                      </div>
-
                 </div>
+        			</div>
+        		</div>
 
+        	</div>
+        	<div class="col-md-4 col-xs-12">
+        		<!-- Side order table -->
+        		<div class="table-responsive">
+	        		<h4>Side Orders</h4>
+	                    <table class="table">
+	                        <tr>
+	                            <th class="text-left">
+	                                Extra Egg
+	                            </th>
+	                            <td class="text-right">
+	                                $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Bacon, Ham or Sausages
+	                            </th>
+	                            <td class="text-right">
+	                                $2.49
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Home Fries, Beans or Tomatoes
+	                            </th>
+	                            <td class="text-right">
+	                                $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Toast and Jam
+	                            </th>
+	                            <td class="text-right">
+	                                $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Fruit Cocktail
+	                            </th>
+	                            <td class="text-right">
+	                                $4.59
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Small Fruit Cocktail
+	                            </th>
+	                            <td class="text-right">
+	                                $2.69
+	                            </td>
+	                        </tr>
+	                    </table>
+	        	</div>
 
-                <div class="col-md-4 col-xs-12">
-                <img class="img-responsive img-rounded center-block" src="img/breakfast.jpg">
+	        	<!-- Beverages -->
+	        	<div class="table-responsive">
+	        		<h4>Beverages</h4>
+	                    <table class="table">
+	                        <tr>
+	                            <th class="text-left">
+	                                Tea or Coffee
+	                            </th>
+	                            <td class="text-right">
+	                                $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Soft Drink
+	                            </th>
+	                            <td class="text-right">
+	                                From $2.19
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Juices
+	                            </th>
+	                            <td class="text-right">
+	                                From $2.49
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Milk
+	                            </th>
+	                            <td class="text-right">
+	                                From $1.69
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Chocolate Milk
+	                            </th>
+	                            <td class="text-right">
+	                                From $1.99
+	                            </td>
+	                        </tr>
+	                         <tr>
+	                            <th class="text-left">
+	                                Decaff Coffee
+	                            </th>
+	                            <td class="text-right">
+	                                $1.99
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th class="text-left">
+	                                Hot Chocolate with Whipped Cream
+	                            </th>
+	                            <td class="text-right">
+	                                From $2.49
+	                            </td>
+	                        </tr>
+                        </table>
                 </div>
-
-
-                <div class="col-md-4 col-xs-12">
-                    Item 3
-                </div>
-            </div>
+        </div> 
+        <!-- column ends -->
         </div>
+    </div><!-- tab 1 ends -->
 
-
-        <div>
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    Item 1
-                </div>
-
-
-                <div class="col-md-4 col-xs-12">
-                    Item 2
-                </div>
-
-
-                <div class="col-md-4 col-xs-12">
-                    Item 3
-                </div>
+    <!-- tab 2 starts -->
+    <div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                Item 1
             </div>
-        </div>
-
-
-        <div>
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    Item 1
-                </div>
-
-
-                <div class="col-md-4 col-xs-12">
-                    Item 2
-                </div>
-
-
-                <div class="col-md-4 col-xs-12">
-                    Item 3
-                </div>
+            <div class="col-md-4 col-xs-12">
+                Item 2
+            </div>
+            <div class="col-md-4 col-xs-12">
+                Item 3
             </div>
         </div>
     </div>
+
+    <!-- tab 3 starts -->
+    <div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                Item 1
+            </div>
+            <div class="col-md-4 col-xs-12">
+                Item 2
+            </div>
+            <div class="col-md-4 col-xs-12">
+                Item 3
+            </div>
+        </div>
+    </div>
+</div>
   
   <script type="text/javascript">
 
@@ -397,7 +732,6 @@
 
     content_box_class.turnBox({
       width: content_width,
-      height: 2000,
       perspective: 1300,
       duration: duration,
       easing: "ease-in-out",
